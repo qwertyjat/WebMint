@@ -139,9 +139,6 @@
     window.WM_initNav && window.WM_initNav();
     window.WM_initAnim && window.WM_initAnim();
   });
-})();
-
-
 On Wed, 15 Jul 2026, 5:11 pm Yogesh Mahala, <yogeshmahala7742@gmail.com> wrote:
 <!DOCTYPE html>
 <html lang="en">
