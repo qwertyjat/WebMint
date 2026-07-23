@@ -95,7 +95,7 @@
       <div class="stat"><div class="stat-num"><span data-count="${s.value}">0</span>${s.suffix}</div><div class="stat-label">${s.label}</div></div>
     `).join("");
     // Services (top 6)
-    fetch("data/services.json").then(r=>r.json()).then(list => {
+    fetch("services.json").then(r=>r.json()).then(list => {
       document.getElementById("servicesGrid").innerHTML = list.slice(0,6).map((s,i)=>`
         <div class="card reveal delay-${(i%4)+1}">
           <div class="card-icon">${s.icon}</div>
@@ -105,7 +105,7 @@
       window.WM_initAnim();
     });
     // Portfolio (top 6)
-    fetch("data/portfolio.json").then(r=>r.json()).then(list => {
+    fetch("portfolio.json").then(r=>r.json()).then(list => {
       document.getElementById("portfolioGrid").innerHTML = list.slice(0,6).map(p=>`
         <div class="portfolio-item reveal">
           <div class="portfolio-thumb" style="background:${p.color}">${p.title.charAt(0)}</div>
@@ -114,7 +114,7 @@
       window.WM_initAnim();
     });
     // Testimonials (top 3)
-    fetch("data/testimonials.json").then(r=>r.json()).then(list => {
+    fetch("testimonials.json").then(r=>r.json()).then(list => {
       document.getElementById("testimonialsGrid").innerHTML = list.slice(0,3).map(t=>`
         <div class="testimonial reveal">
           <p>"${t.quote}"</p>
