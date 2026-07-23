@@ -56,6 +56,3 @@ window.WEBMINT_CONFIG = {
     customBackend: { enabled: false, endpoint: "" },
   },
 };
-
-
-Ow   
